@@ -1,4 +1,4 @@
-import { EventData } from "./EventData";
+import { EventData } from "./IEventData";
 import FishingMan from "./FishingMan";
 import { FishType } from "./FishType";
 

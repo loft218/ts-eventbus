@@ -3,13 +3,10 @@
 import FishingEventData from "./FishingEventData";
 import FishingMan from "./FishingMan";
 import { FishType } from "./FishType";
-
-interface FishingHandler {
-  (eventData: FishingEventData): void;
-}
+import { IEventData } from "./IEventData";
 
 export default class FishingRod {
-  fishingEvent: FishingHandler;
+  fishingEvent: (eventData: IEventData) => void;
 
   throwHook(man: FishingMan) {
     console.log("\n开始下钩！");
